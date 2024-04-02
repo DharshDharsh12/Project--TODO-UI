@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+  <section class="whole-section-wrapper">
+    <div class="whole-border1">
+      <div class="whole-section">
+        <div class="Menu-column">
+          <h1 class="menu-heading">Menu</h1>
+          <input class="menu-search" type="text" placeholder="Search">
+          <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+          <div class="task-status-wrapper">
+            <label class="task-status-heading">Task Status </label>
+            <div class="menu-completed" id="completed">
+              <div class="menu-completed-color"></div>Completed
+            </div>
+            <div class="menu-notcompleted" id="not-Completed">
+              <div class="menu-notcompleted-color"></div>Not Completed
+            </div>
+            <div class="menu-alltasks" id="menu-alltasks">
+              <div class="menu-alltasks-color"></div>All Tasks
+            </div>
+          </div>
+          <div class="task-priority-wrapper">
+            <label class="task-priority-heading">Task Priority </label>
+            <div class="menu-highpriority" id="menu-highpriority">
+              <div class="menu-highpriority-color"></div>High Priority
+            </div>
+            <div class="menu-mediumpriority" id="menu-mediumpriority">
+              <div class="menu-mediumpriority-color"></div>Medium Priority
+            </div>
+            <div class="menu-lowpriority" id="menu-lowpriority">
+              <div class="menu-lowpriority-color"></div>Low Priority
+            </div>
+          </div>
+        </div>
+
+        <div class="Tasks-column">
+          <h1 class="task-heading">Tasks</h1>
+          <div id="tasks-list" class="tasks"></div>
+        </div>
+
+        <div class="Add-Edit-column">
+          <h1 class="add-edit-heading">Add task</h1>
+          <input id="add-task" class="add-task" type="text" placeholder="Add a New Task">
+          <input id="task-description" class="task-description" type="text" placeholder="Description...">
+          <label>Task Priority : </label>
+          <select id="priority" class="priority-options">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+          </select>
+          <br>
+          <button id="add-task-button" class="add-task-button">ADD</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</body>
+
+<script src="script.js"></script>
+
+</html>
